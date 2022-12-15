@@ -40,20 +40,26 @@ function fibonacciGenerator (n) {
     //Write your code here:
     
     var sequence = [];
+    
     if (n === 1) {
       sequence[0] = 0;
+        
     } else if (n === 2) {
       sequence[0] = 0;
       sequence[1] = 1;
+        
     } else if (n > 2) {
       sequence[0] = 0;
       sequence[1] = 1;
+        
       for (var i = 0; i < n - 2; i++){
         sequence.push(sequence[sequence.length - 1] + sequence[sequence.length - 2]);
       }
+        
     } else {
       console.log("Provide an integer bigger than 0");
     }
+    
   return sequence;
        
     
