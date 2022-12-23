@@ -7,7 +7,11 @@
 .dice {
   text-align: center;
   display: inline-block;
+}
 
+.flag {
+  display: inline-block;
+  width: 6rem;
 }
 
 body {
@@ -28,14 +32,16 @@ p {
   font-family: 'Indie Flower', cursive;
 }
 
-img {
-  width: 80%;
-}
-
 footer {
   margin-top: 5%;
-  color: #EEEEEE;
   text-align: center;
-  font-family: 'Indie Flower', cursive;
+}
 
+footer p {
+  color: #EEEEEE;
+  font-size: 1rem;
+}
+
+footer a {  
+  color: #EEEEEE;
 }
