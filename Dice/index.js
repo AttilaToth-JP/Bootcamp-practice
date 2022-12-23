@@ -8,3 +8,15 @@ var player2Dice = document.querySelector(".img2");
 
 player1Dice.setAttribute("src", "images/dice" + player1Nr + ".png");
 player2Dice.setAttribute("src", "images/dice" + player2Nr + ".png");
+
+//display winner with h1
+var result = document.querySelector("h1");
+
+if (player1Nr > player2Nr) {
+    result.innerHTML = "<img class='flag' title='red flag' src='images/red-flag.png' /> Player 1 wins!";
+
+} else if (player1Nr < player2Nr) {
+    result.innerHTML = "Player 2 wins! <img class='flag' title='red flag' src='images/red-flag.png' />";
+} else {
+    result.innerHTML = "Draw!";
+}
